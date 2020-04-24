@@ -16,4 +16,7 @@ dependencies: \
   /Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Flutter/Flutter.framework/Headers/FlutterCodecs.h \
   /Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Flutter/Flutter.framework/Headers/FlutterMacros.h \
   /Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Flutter/Flutter.framework/Headers/FlutterAppDelegate.h \
-  /Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Flutter/Flutter.framework/Headers/Flutter.h
+  /Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Flutter/Flutter.framework/Headers/Flutter.h \
+  /Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/build/ios/Debug-iphoneos/path_provider/path_provider.framework/Headers/FLTPathProviderPlugin.h \
+  /Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/build/ios/Debug-iphoneos/path_provider/path_provider.framework/Modules/module.modulemap \
+  /Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/build/ios/Debug-iphoneos/path_provider/path_provider.framework/Headers/path_provider-umbrella.h
