@@ -31,6 +31,10 @@ dependencies:
   http: ^0.12.0+4
   provider: ^4.0.4
   flutter_login: ^1.0.14
+  flip_card: ^0.4.4
+  circular_profile_avatar: ^1.0.6
+
+
 
 
 
@@ -44,6 +48,8 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
+  assets:
+    - assets/
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

@@ -19,4 +19,8 @@ dependencies: \
   /Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Flutter/Flutter.framework/Headers/Flutter.h \
   /Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/build/ios/Debug-iphoneos/path_provider/path_provider.framework/Headers/FLTPathProviderPlugin.h \
   /Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/build/ios/Debug-iphoneos/path_provider/path_provider.framework/Modules/module.modulemap \
-  /Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/build/ios/Debug-iphoneos/path_provider/path_provider.framework/Headers/path_provider-umbrella.h
+  /Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/build/ios/Debug-iphoneos/path_provider/path_provider.framework/Headers/path_provider-umbrella.h \
+  /Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/build/ios/Debug-iphoneos/sqflite/sqflite.framework/Headers/SqflitePlugin.h \
+  /Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/build/ios/Debug-iphoneos/sqflite/sqflite.framework/Modules/module.modulemap \
+  /Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/build/ios/Debug-iphoneos/sqflite/sqflite.framework/Headers/SqfliteOperation.h \
+  /Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/build/ios/Debug-iphoneos/sqflite/sqflite.framework/Headers/sqflite-umbrella.h

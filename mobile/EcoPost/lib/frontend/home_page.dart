@@ -1,7 +1,9 @@
 import 'package:EcoPost/models/ecopost_info.dart';
 import 'package:EcoPost/utilities/constants.dart';
+import 'package:EcoPost/widgets/post_card.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
+import 'package:flip_card/flip_card.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -31,15 +33,15 @@ class MyHome extends StatelessWidget {
                   color: Colors.white,
                   letterSpacing: 7,
                 ))),
-            actions: <Widget>[
-              IconButton(
-                icon: Icon(
-                  Icons.search,
-                  color: Colors.white,
-                ),
-                onPressed: () {},
-              )
-            ],
+//            actions: <Widget>[
+//              IconButton(
+//                icon: Icon(
+//                  Icons.search,
+//                  color: Colors.white,
+//                ),
+//                onPressed: () {},
+//              )
+//            ],
           ),
           bottomNavigationBar: ConvexAppBar(
             initialActiveIndex: 0,
@@ -62,16 +64,21 @@ class MyHome extends StatelessWidget {
               }
             },
             items: tabs,
-            backgroundColor: Constants.themeLightGreen,
+            backgroundColor: Constants.themeGreen,
             style: TabStyle.reactCircle,
           ),
 //          appBar: AppBar(
 //          ),
 
-          body: FlatButton(
-            onPressed: () {},
-            child: Text(""),
-          ),
+          body: new ListView.builder(
+              itemCount: 50,
+//                l: new SliverGridDelegateWithFixedCrossAxisCount(
+//                    crossAxisCount: 1),
+              itemBuilder: (BuildContext context, int index) {
+                return new PostCard(
+
+                );
+              }),
         ),
       ),
     );
