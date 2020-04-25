@@ -33,6 +33,9 @@ dependencies:
   flutter_login: ^1.0.14
   flip_card: ^0.4.4
   circular_profile_avatar: ^1.0.6
+  dio: ^3.0.9
+  path_provider: ^1.6.7
+  font_awesome_flutter: ^8.8.1
 
 
 

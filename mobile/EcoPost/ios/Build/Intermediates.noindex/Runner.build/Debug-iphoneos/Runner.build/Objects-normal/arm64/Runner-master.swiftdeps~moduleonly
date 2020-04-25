@@ -1,5 +1,5 @@
 version: "Apple Swift version 5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
 options: "afff84fc2b7a87b5951cc19566b2efdd"
-build_time: [1587767777, 889215000]
+build_time: [1587787160, 829545000]
 inputs:
   "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Runner/AppDelegate.swift": [1571084233, 785902918]

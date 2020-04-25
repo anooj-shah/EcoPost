@@ -5,6 +5,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flip_card/flip_card.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
@@ -33,15 +34,23 @@ class MyHome extends StatelessWidget {
                   color: Colors.white,
                   letterSpacing: 7,
                 ))),
-//            actions: <Widget>[
-//              IconButton(
-//                icon: Icon(
-//                  Icons.search,
-//                  color: Colors.white,
-//                ),
-//                onPressed: () {},
-//              )
-//            ],
+            actions: <Widget>[
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: [
+                    IconButton(
+                      icon: FaIcon(FontAwesomeIcons.leaf),
+                      color: Colors.white,
+                      onPressed: () {},
+                    ),
+                    AutoSizeText(
+                      "35+"
+                    )
+                  ],
+                ),
+              )
+            ],
           ),
           bottomNavigationBar: ConvexAppBar(
             initialActiveIndex: 0,
@@ -75,8 +84,15 @@ class MyHome extends StatelessWidget {
 //                l: new SliverGridDelegateWithFixedCrossAxisCount(
 //                    crossAxisCount: 1),
               itemBuilder: (BuildContext context, int index) {
-                return new PostCard(
-
+                return Column(
+                  children: [
+                    new PostCard(),
+                    Divider(
+                      thickness: 3,
+                      indent: 12,
+                      endIndent: 12,
+                    )
+                  ],
                 );
               }),
         ),
