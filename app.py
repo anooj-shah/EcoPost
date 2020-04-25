@@ -29,15 +29,16 @@ def get_posts():
 
 @app.route('/upload_image', methods=['POST'])
 def upload_image():
-    response = request.get_json()
-    username = response['username']
-    meetings_arr = []
-    user = {
-        'username': username,
-        'subscriptions': meetings_arr,
-    }
-    result = users.insert_one(user)
+    response = request.files
+    print(response)
     return "success"
+    # meetings_arr = []
+    # user = {
+    #     'username': username,
+    #     'subscriptions': meetings_arr,
+    # }
+    # result = users.insert_one(user)
+    # return "success"
 # @app.route('/subscribe', methods=['POST'])
 # def subscribe():
 #     response = request.get_json()
