@@ -1,7 +1,6 @@
 from flask import Flask, request, abort, jsonify
 from pymongo import MongoClient
 import requests
-import json
 import os
 
 app = Flask(__name__)
@@ -32,12 +31,10 @@ def get_posts():
 def upload_image():
     # response1 = request.values
     # print("response1", response1)
-    response2 = request.args
-    json_dumps = json.dumps(response2)
-
-    print("response2", json_dumps)
-    # response3 = request.form
-    # print("response3", response3)
+    # response2 = request.args
+    # print("response2", response2)
+    response3 = request.form
+    print("response3", response3)
 
     # print("RESPONSE", response['image'])
     return "success"
