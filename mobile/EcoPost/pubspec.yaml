@@ -36,6 +36,7 @@ dependencies:
   dio: ^3.0.9
   path_provider: ^1.6.7
   font_awesome_flutter: ^8.8.1
+  google_maps_flutter: ^0.5.26+4
 
 
 
