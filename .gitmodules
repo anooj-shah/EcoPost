@@ -1,0 +1,6 @@
+[submodule "mobile/EcoPost/mobile"]
+	path = mobile/EcoPost/mobile
+	url = https://github.com/YonathanZetune/EcoPostMobile.git
+[submodule "mobile_app"]
+	path = mobile_app
+	url = https://github.com/YonathanZetune/EcoPostMobile.git
