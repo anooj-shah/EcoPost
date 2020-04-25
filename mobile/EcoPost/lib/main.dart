@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
 //        '/ProfilePage': (context) => new ProfilePage(),
       },
       theme: ThemeData(
-//        primaryColor: Constants.themePurple,
+        primaryColor: Constants.themeGreen,
           ),
       // TODO: Add boolean using shared pref package to only show login once
       home: MyHome(),
