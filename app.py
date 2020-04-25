@@ -2,30 +2,42 @@ from flask import Flask, request, abort, jsonify
 from pymongo import MongoClient
 import requests
 import os
-app = Flask(__name__)
-# client = pymongo.MongoClient('')
-#
-# db = client['ecopost']
-# posts = db['posts']
-# users = db['users']
 
+app = Flask(__name__)
+
+uri = os.environ['MONGO_DB_URI']
+client = pymongo.MongoClient(uri)
+db = client['ecopost']
+posts = db['posts']
+users = db['users']
 
 @app.route('/')
 def home():
     return "<h1>Hello</h1>"
 
-# @app.route('/add_user', methods=['POST'])
-# def add_user():
-#     response = request.get_json()
-#     username = response['username']
-#     meetings_arr = []
-#     user = {
-#         'username': username,
-#         'subscriptions': meetings_arr,
-#     }
-#     result = users.insert_one(user)
-#     return "success"
-#
+@app.route('/get_posts', methods=['POST'])
+def get_posts():
+    response = request.get_json()
+    username = response['username']
+    meetings_arr = []
+    user = {
+        'username': username,
+        'subscriptions': meetings_arr,
+    }
+    result = users.insert_one(user)
+    return "success"
+
+@app.route('/upload_image', methods=['POST'])
+def upload_image():
+    response = request.get_json()
+    username = response['username']
+    meetings_arr = []
+    user = {
+        'username': username,
+        'subscriptions': meetings_arr,
+    }
+    result = users.insert_one(user)
+    return "success"
 # @app.route('/subscribe', methods=['POST'])
 # def subscribe():
 #     response = request.get_json()
