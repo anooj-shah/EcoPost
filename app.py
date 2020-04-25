@@ -29,8 +29,16 @@ def get_posts():
 
 @app.route('/upload_image', methods=['POST'])
 def upload_image():
-    response = request.get_json
-    print("RESPONSE", response['image'])
+    response = request.json
+    print("one",response)
+    response1 = request.values
+    print("response1", response1)
+    response2 = request.args
+    print("response2", response2)
+    response3 = request.form
+    print("response3", response3)
+
+    # print("RESPONSE", response['image'])
     return "success"
     # meetings_arr = []
     # user = {
