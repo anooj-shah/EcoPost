@@ -29,14 +29,14 @@ def get_posts():
 
 @app.route('/upload_image', methods=['POST'])
 def upload_image():
-    response = request.json
-    print("one",response)
-    response1 = request.values
-    print("response1", response1)
+    # response1 = request.values
+    # print("response1", response1)
     response2 = request.args
+    json_dumps = json.dumps(response2)
+
     print("response2", response2)
-    response3 = request.form
-    print("response3", response3)
+    # response3 = request.form
+    # print("response3", response3)
 
     # print("RESPONSE", response['image'])
     return "success"
