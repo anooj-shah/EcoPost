@@ -30,7 +30,7 @@ def get_posts():
 @app.route('/upload_image', methods=['POST'])
 def upload_image():
     response = request.files
-    print(response)
+    print("RESPONSE" response)
     return "success"
     # meetings_arr = []
     # user = {
