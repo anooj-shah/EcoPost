@@ -42,11 +42,11 @@ class MyHome extends StatelessWidget {
                     IconButton(
                       icon: FaIcon(FontAwesomeIcons.leaf),
                       color: Colors.white,
-                      onPressed: () {},
+                      onPressed: () {
+                        //TODO: Take to a point submission page
+                      },
                     ),
-                    AutoSizeText(
-                      "35+"
-                    )
+                    AutoSizeText("35+")
                   ],
                 ),
               )
@@ -76,13 +76,8 @@ class MyHome extends StatelessWidget {
             backgroundColor: Constants.themeGreen,
             style: TabStyle.reactCircle,
           ),
-//          appBar: AppBar(
-//          ),
-
           body: new ListView.builder(
               itemCount: 50,
-//                l: new SliverGridDelegateWithFixedCrossAxisCount(
-//                    crossAxisCount: 1),
               itemBuilder: (BuildContext context, int index) {
                 return Column(
                   children: [
