@@ -33,8 +33,10 @@ def upload_image():
     # print("response1", response1)
     # response2 = request.args
     # print("response2", response2)
-    response3 = request.form
-    print("response3", response3)
+    # response3 = request.form
+    response1 = request.get_json()
+    print("RESPONSE",response1['image'])
+    # print("response3", response3)
 
     # print("RESPONSE", response['image'])
     return "success"
