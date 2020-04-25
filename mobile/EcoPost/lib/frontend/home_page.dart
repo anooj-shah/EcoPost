@@ -77,7 +77,7 @@ class MyHome extends StatelessWidget {
             style: TabStyle.reactCircle,
           ),
           body: new ListView.builder(
-              itemCount: 50,
+              itemCount: 2,
               itemBuilder: (BuildContext context, int index) {
                 return Column(
                   children: [

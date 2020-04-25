@@ -11,99 +11,130 @@ depends-top-level:
 - "AppDelegate"
 - "Bool"
 - "FlutterAppDelegate"
+- !private "GMSServices"
 - !private "GeneratedPluginRegistrant"
+- !private "StringLiteralType"
 - "UIApplication"
 depends-member:
 - ["6Runner11AppDelegateC", "Bool"]
+- !private ["6Runner11AppDelegateC", "GMSServices"]
 - !private ["6Runner11AppDelegateC", "GeneratedPluginRegistrant"]
 - ["6Runner11AppDelegateC", "UIApplication"]
 - ["6Runner11AppDelegateC", "application"]
 - ["6Runner11AppDelegateC", "deinit"]
 - ["6Runner11AppDelegateC", "init"]
+- !private ["s7CVarArgP", "GMSServices"]
 - !private ["s7CVarArgP", "GeneratedPluginRegistrant"]
 - ["s7CVarArgP", "LaunchOptionsKey"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "application"]
+- !private ["s7CVarArgP", "provideAPIKey"]
 - !private ["s7CVarArgP", "register"]
+- !private ["s28CustomDebugStringConvertibleP", "GMSServices"]
 - !private ["s28CustomDebugStringConvertibleP", "GeneratedPluginRegistrant"]
 - ["s28CustomDebugStringConvertibleP", "LaunchOptionsKey"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "application"]
+- !private ["s28CustomDebugStringConvertibleP", "provideAPIKey"]
 - !private ["s28CustomDebugStringConvertibleP", "register"]
+- !private ["s23CustomStringConvertibleP", "GMSServices"]
 - !private ["s23CustomStringConvertibleP", "GeneratedPluginRegistrant"]
 - ["s23CustomStringConvertibleP", "LaunchOptionsKey"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "application"]
+- !private ["s23CustomStringConvertibleP", "provideAPIKey"]
 - !private ["s23CustomStringConvertibleP", "register"]
+- !private ["SQ", "GMSServices"]
 - !private ["SQ", "GeneratedPluginRegistrant"]
 - ["SQ", "LaunchOptionsKey"]
 - ["SQ", ""]
 - !private ["SQ", "application"]
+- !private ["SQ", "provideAPIKey"]
 - !private ["SQ", "register"]
 - ["So18FlutterAppDelegateC", "Bool"]
+- !private ["So18FlutterAppDelegateC", "GMSServices"]
 - !private ["So18FlutterAppDelegateC", "GeneratedPluginRegistrant"]
 - ["So18FlutterAppDelegateC", "UIApplication"]
 - ["So18FlutterAppDelegateC", ""]
 - ["So18FlutterAppDelegateC", "application"]
 - ["So18FlutterAppDelegateC", "init"]
+- !private ["So27FlutterAppLifeCycleProviderP", "GMSServices"]
 - !private ["So27FlutterAppLifeCycleProviderP", "GeneratedPluginRegistrant"]
 - ["So27FlutterAppLifeCycleProviderP", ""]
 - !private ["So27FlutterAppLifeCycleProviderP", "application"]
+- !private ["So21FlutterPluginRegistryP", "GMSServices"]
 - !private ["So21FlutterPluginRegistryP", "GeneratedPluginRegistrant"]
 - ["So21FlutterPluginRegistryP", ""]
 - !private ["So21FlutterPluginRegistryP", "application"]
+- !private ["So11GMSServicesC", "provideAPIKey"]
 - !private ["So25GeneratedPluginRegistrantC", "register"]
+- !private ["SH", "GMSServices"]
 - !private ["SH", "GeneratedPluginRegistrant"]
 - ["SH", "LaunchOptionsKey"]
 - ["SH", ""]
 - !private ["SH", "application"]
+- !private ["SH", "provideAPIKey"]
 - !private ["SH", "register"]
 - ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "GMSServices"]
 - !private ["So8NSObjectC", "GeneratedPluginRegistrant"]
 - ["So8NSObjectC", "LaunchOptionsKey"]
 - ["So8NSObjectC", "UIApplication"]
 - ["So8NSObjectC", "application"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "provideAPIKey"]
 - !private ["So8NSObjectC", "register"]
+- !private ["So8NSObjectP", "GMSServices"]
 - !private ["So8NSObjectP", "GeneratedPluginRegistrant"]
 - ["So8NSObjectP", "LaunchOptionsKey"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "application"]
+- !private ["So8NSObjectP", "provideAPIKey"]
 - !private ["So8NSObjectP", "register"]
 - ["So13UIApplicationC", "LaunchOptionsKey"]
+- !private ["So21UIApplicationDelegateP", "GMSServices"]
 - !private ["So21UIApplicationDelegateP", "GeneratedPluginRegistrant"]
 - ["So21UIApplicationDelegateP", ""]
 - !private ["So21UIApplicationDelegateP", "application"]
+- !private ["So30UIPasteConfigurationSupportingP", "GMSServices"]
 - !private ["So30UIPasteConfigurationSupportingP", "GeneratedPluginRegistrant"]
 - ["So30UIPasteConfigurationSupportingP", "LaunchOptionsKey"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "application"]
 - ["So11UIResponderC", "Bool"]
+- !private ["So11UIResponderC", "GMSServices"]
 - !private ["So11UIResponderC", "GeneratedPluginRegistrant"]
 - ["So11UIResponderC", "LaunchOptionsKey"]
 - ["So11UIResponderC", "UIApplication"]
 - ["So11UIResponderC", "application"]
 - ["So11UIResponderC", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "GMSServices"]
 - !private ["So30UIResponderStandardEditActionsP", "GeneratedPluginRegistrant"]
 - ["So30UIResponderStandardEditActionsP", "LaunchOptionsKey"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "application"]
+- !private ["So23UIUserActivityRestoringP", "GMSServices"]
 - !private ["So23UIUserActivityRestoringP", "GeneratedPluginRegistrant"]
 - ["So23UIUserActivityRestoringP", "LaunchOptionsKey"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "application"]
+- !private ["So32UNUserNotificationCenterDelegateP", "GMSServices"]
 - !private ["So32UNUserNotificationCenterDelegateP", "GeneratedPluginRegistrant"]
 - ["So32UNUserNotificationCenterDelegateP", ""]
 - !private ["So32UNUserNotificationCenterDelegateP", "application"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "GMSServices"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "GeneratedPluginRegistrant"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "LaunchOptionsKey"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "application"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "provideAPIKey"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "register"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "GMSServices"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "GeneratedPluginRegistrant"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "LaunchOptionsKey"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "application"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "provideAPIKey"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "register"]
 depends-nominal:
 - "6Runner11AppDelegateC"
@@ -114,6 +145,7 @@ depends-nominal:
 - "So18FlutterAppDelegateC"
 - "So27FlutterAppLifeCycleProviderP"
 - "So21FlutterPluginRegistryP"
+- !private "So11GMSServicesC"
 - !private "So25GeneratedPluginRegistrantC"
 - "SH"
 - "So8NSObjectC"
@@ -136,6 +168,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Dispatch.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Metal.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Darwin.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreLocation.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Foundation.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreFoundation.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreAudio.swiftmodule/arm64.swiftmodule"
@@ -144,24 +177,70 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/UIKit.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftOnoneSupport.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Combine.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanorama.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCamera.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaService.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaSource.h"
 - "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Flutter/Flutter.framework/Headers/FlutterCallbackCache.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCircle.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapStyle.h"
 - "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Flutter/Flutter.framework/Headers/FlutterEngine.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolyline.h"
 - "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Flutter/Flutter.framework/Headers/FlutterTexture.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GoogleMapsBase.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCameraUpdate.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCameraUpdate.h"
 - "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Flutter/Flutter.framework/Headers/FlutterPluginAppLifeCycleDelegate.h"
 - "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Flutter/Flutter.framework/Headers/FlutterAppDelegate.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorBuilding.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPath.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMutablePath.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLink.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorLevel.h"
 - "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Flutter/Flutter.framework/Headers/FlutterPlugin.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolygon.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapView+Animation.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSOrientation.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSProjection.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCameraPosition.h"
 - "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Runner/Runner-Bridging-Header.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGeocoder.h"
 - "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Flutter/Flutter.framework/Headers/FlutterBinaryMessenger.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMarker.h"
 - "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Flutter/Flutter.framework/Headers/FlutterViewController.h"
 - "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Flutter/Flutter.framework/Headers/FlutterHeadlessDartRunner.h"
 - "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Flutter/Flutter.framework/Headers/Flutter.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCALayer.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLayer.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSURLTileLayer.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSTileLayer.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSSyncTileLayer.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapLayer.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMarkerLayer.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSOverlayLayer.h"
 - "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Flutter/Flutter.framework/Headers/FlutterCodecs.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCoordinateBounds.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSServices.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSUISettings.h"
 - "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Flutter/Flutter.framework/Headers/FlutterChannels.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGeometryUtils.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSDeprecationMacros.h"
 - "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Flutter/Flutter.framework/Headers/FlutterMacros.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCompatabilityMacros.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCoordinateBounds+GoogleMaps.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GoogleMaps.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSAddress.h"
 - "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Flutter/Flutter.framework/Headers/FlutterPlatformViews.h"
 - "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Flutter/Flutter.framework/Headers/FlutterDartProject.h"
 - "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Runner/GeneratedPluginRegistrant.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaView.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapView.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorDisplay.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSOverlay.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGroundOverlay.h"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Modules/module.modulemap"
 - "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Flutter/Flutter.framework/Modules/module.modulemap"
+- "/Users/YoniZetune/Develop/earthxhack/EcoPost/mobile/EcoPost/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
@@ -170,6 +249,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioTypes.apinotes"
@@ -177,4 +257,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "80d0826c0c471f9487fe4e05b6cf857b"
+interface-hash: "7f6b6d6c154ef58770c3874ff0636387"

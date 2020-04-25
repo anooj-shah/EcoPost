@@ -1,5 +1,6 @@
 import 'package:EcoPost/utilities/constants.dart';
 import 'package:EcoPost/utilities/requests.dart';
+import 'package:EcoPost/widgets/back_card.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:circular_profile_avatar/circular_profile_avatar.dart';
 import 'package:flip_card/flip_card.dart';
@@ -74,10 +75,7 @@ class PostCard extends StatelessWidget {
           ),
         ),
       ),
-      back: Container(
-        child: Text('Back'),
-      ),
+      back: BackCard(lat: 33.071153, long: -96.704665),
     );
-    ;
   }
 }
