@@ -34,7 +34,7 @@ def upload_image():
     response2 = request.args
     json_dumps = json.dumps(response2)
 
-    print("response2", response2)
+    print("response2", json_dumps)
     # response3 = request.form
     # print("response3", response3)
 
