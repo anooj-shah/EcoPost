@@ -1,6 +1,6 @@
 import 'package:EcoPost/utilities/constants.dart';
 import 'package:EcoPost/utilities/requests.dart';
-import 'package:EcoPost/widgets/back_card.dart';
+import 'package:EcoPost/widgets/back_card_post.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:circular_profile_avatar/circular_profile_avatar.dart';
 import 'package:flip_card/flip_card.dart';
