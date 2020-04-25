@@ -6,7 +6,7 @@ import os
 app = Flask(__name__)
 
 uri = os.environ['MONGO_DB_URI']
-client = pymongo.MongoClient(uri)
+client = MongoClient(uri)
 db = client['ecopost']
 posts = db['posts']
 users = db['users']
