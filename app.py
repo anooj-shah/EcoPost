@@ -69,20 +69,21 @@ def send_post():
 
     return "success"
 
-@app.route('/get_personal_challenges_page', methods=['GET']):
+@app.route('/get_personal_challenges_page', methods=['GET'])
 def get_personal_challenges_page():
     response = request.form
     handle = response['handle']
     dict = {}
     challenged_by = []
-    # dict['challenged_by'] = challenged_by # needs to include status
-    #
-    # # This will be received from the handle
-    # dict['handle'] = handle
-    # dict['profile_picture'] = profile_picture
-    # dict['name'] = name;
-    # dict['challenged'] = challenge
+    dict['challenged_by'] = challenged_by # needs to include status
 
+    query = { "handle": handle }
+    post = posts.find(myquery)
+    # This will be received from the handle
+    dict['handle'] = post['handle']
+    dict['profile_picture'] = post['profile_picture']
+    dict['name'] = post['name']
+    dict['challenged'] = post['challenge']
 
 
 @app.route('/get_post_comments', methods=['GET'])
