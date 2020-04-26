@@ -92,10 +92,6 @@ def get_personal_challenges_page():
 def get_post_comments():
     response = request.form
 
-@app.route('/get_post_comments', methods=['GET'])
-def get_post_comments():
-    response = request.form
-
 @app.route('/send_post_comment', methods=['POST'])
 def send_post_comments():
     response = request.form
