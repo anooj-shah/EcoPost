@@ -64,7 +64,7 @@ def send_post():
     }
 
     posts.insert_one(post)
-    challenges_arr = challenges.split(',')
+    challenges_arr = challenge.split(',')
     challenges.insert_one({'handle': challenges_arr})
 
     return "success"
