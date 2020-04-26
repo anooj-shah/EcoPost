@@ -50,7 +50,7 @@ def send_post():
     info = response.get('info')
     profile_picture = response.get('profile_picture')
     lat_lng = response.get('lat_lng') # array
-    lat_lng = response.split(',')
+    lat_lng = lat_lng.split(',')
     timestamp = response.get('timestamp')
     challenge = response.get('challenge') # given as string
     challenge = challenge.split(',')
