@@ -46,10 +46,10 @@ def send_post():
     lat_lng = response.get('lat_lng')
     timestamp = response.get('timestamp')
     challenge = response.get('challenge')
-    lat_lng_arr = lat_lng.split(',')
-    lat_lng_arr[0] += (random.randint(1,50) * 0.0001)
-    lat_lng_arr[1] += (random.randint(1,50) * 0.0001)
-    lat_lng = ",".join(lat_lng_arr)
+    # lat_lng_arr = lat_lng.split(',')
+    # lat_lng_arr[0] += (random.randint(1,50) * 0.0001)
+    # lat_lng_arr[1] += (random.randint(1,50) * 0.0001)
+    # lat_lng = ",".join(lat_lng_arr)
 
     post = {
         'post_id': post_id,
@@ -67,9 +67,9 @@ def send_post():
     }
 
     posts.insert_one(post)
-    challenges_arr = challenge.split(',')
-    for i in challenges_arr:
-        challenges.insert_one({i: handle})
+    # challenges_arr = challenge.split(',')
+    # for i in challenges_arr:
+    #     challenges.insert_one({i: handle})
     return "success"
 
 @app.route('/get_personal_challenges_page', methods=['GET'])
