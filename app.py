@@ -54,7 +54,7 @@ def send_post():
         'name': name,
         'location': location,
         'image': image,
-        'likes': random.randInt(50,2000),
+        'likes': random.randint(50,2000),
         'hashtag': hashtag,
         'info': info,
         'profile_picture': profile_picture,
