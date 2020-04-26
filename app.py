@@ -2,6 +2,9 @@ from flask import Flask, request, abort, jsonify
 from pymongo import MongoClient
 import requests
 import os
+from bson.json_util import dumps
+import json
+
 
 app = Flask(__name__)
 
@@ -17,9 +20,11 @@ def home():
 
 @app.route('/get_posts', methods=['GET'])
 def get_posts():
-    for document in posts.find():
-        print(document)
-
+    output = []
+    for x in posts.find({},{ "_id": 0, "image": 1}):
+        print(x)
+        output.append(x)
+    return json.dumps(output)
 
 @app.route('/upload_image', methods=['POST'])
 def upload_image():
@@ -32,18 +37,6 @@ def upload_image():
     result = posts.insert_one(post)
     return "success"
 
-# @app.route('/subscribe', methods=['POST'])
-# def subscribe():
-#     response = request.get_json()
-#     username = response['username']
-#     zoom_id = response['zoom_id']
-#     print(meetings.find_one({"zoom_id":zoom_id}))
-#     return "success"
-#
-# @app.route('/list_meetings1')
-# def list_meetings1():
-#     meetings_arr = list(meetings.find())
-#     return jsonify(results = meetings_arr)
 
 if __name__ == '__main__':
     app.run(debug=True)
