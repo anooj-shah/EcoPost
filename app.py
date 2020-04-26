@@ -15,17 +15,11 @@ users = db['users']
 def home():
     return "<h1>Hello</h1>"
 
-@app.route('/get_posts', methods=['POST'])
+@app.route('/get_posts', methods=['GET'])
 def get_posts():
-    response = request.get_json()
-    username = response['username']
-    meetings_arr = []
-    user = {
-        'username': username,
-        'subscriptions': meetings_arr,
-    }
-    result = users.insert_one(user)
-    return "success"
+    for document in posts.find():
+        print(document)
+
 
 @app.route('/upload_image', methods=['POST'])
 def upload_image():
