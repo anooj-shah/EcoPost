@@ -69,7 +69,7 @@ def send_post():
     posts.insert_one(post)
     challenges_arr = challenge.split(',')
     for i in challenges_arr:
-        challenges.insert_one({i: handle})
+        challenges.insert_one({i: "@dylantheriot"})
     return "success"
 
 @app.route('/get_personal_challenges_page', methods=['GET'])
