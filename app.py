@@ -36,7 +36,7 @@ def send_post():
     id = uuid.uuid4()
     post_id = str(id)
 
-    handle = response.get('handle')
+    # handle = response.get('handle')
     name = response.get('name')
     location = response.get('location')
     image = response.get('image')
