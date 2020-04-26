@@ -47,14 +47,18 @@ def send_post():
     lat_lng = response.get('lat_lng')
     timestamp = response.get('timestamp')
     challenge = response.get('challenge')
-
+    lat_lng_arr = lat_lng.split(',')
+    lat_lng_arr[0] += (random.randint(1,50) * 0.0001)
+    lat_lng_arr[1] += (random.randint(1,50) * 0.0001)
+    lat_lng = ",".join(lat_lng_arr)
+    
     post = {
         'post_id': post_id,
         'handle': handle,
         'name': name,
         'location': location,
         'image': image,
-        'likes': random.randint(50,2000),
+        'likes': random.randint(50,1000),
         'hashtag': hashtag,
         'info': info,
         'profile_picture': profile_picture,
@@ -65,7 +69,7 @@ def send_post():
 
     posts.insert_one(post)
     challenges_arr = challenge.split(',')
-    challenges.insert_one({'handle': challenges_arr})
+    challenges.insert_one({handle: challenges_arr})
 
     return "success"
 
