@@ -32,7 +32,7 @@ def get_posts():
 
 @app.route('/send_post', methods=['POST'])
 def send_post():
-    response = request.json
+    response = request.form
     id = uuid.uuid4()
     post_id = str(id)
 
