@@ -28,7 +28,7 @@ def get_posts():
 
 @app.route('/send_post', methods=['POST'])
 def send_post():
-    response = request.get_json()
+    response = request.json
     id = uuid.uuid4()
     post_id = str(id)
 
