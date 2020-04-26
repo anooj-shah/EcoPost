@@ -24,7 +24,8 @@ def get_posts():
     for x in posts.find({},{ "_id": 0, "post_id": 1, "handle": 1, "name": 1, "location":1, "info":1, "lat_lng":1, "timestamp":1, "challenge":1}):
         print(x)
         output.append(x)
-    return json.dumps(output)
+    dict['data'] = output
+    return json.dumps(dict)
 
 @app.route('/send_post', methods=['POST'])
 def send_post():
