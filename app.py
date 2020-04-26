@@ -32,7 +32,7 @@ def get_posts():
 
 @app.route('/send_post', methods=['POST'])
 def send_post():
-    response = request.form
+    response = request.json
     id = uuid.uuid4()
     post_id = str(id)
 
@@ -57,19 +57,19 @@ def send_post():
         'name': name,
         'location': location,
         'image': image,
-        'likes': random.randint(50,1000),
+        'likes': random.randint(1,2),
         'hashtag': hashtag,
         'info': info,
         'profile_picture': profile_picture,
         'lat_lng': lat_lng,
-        'timestamp': timestamp,
+        'timestamp': "a minute ago",
         'challenge': challenge
     }
 
     posts.insert_one(post)
-    # challenges_arr = challenge.split(',')
-    # for i in challenges_arr:
-    #     challenges.insert_one({i: handle})
+    challenges_arr = challenge.split(',')
+    for i in challenges_arr:
+        challenges.insert_one({i: handle})
     return "success"
 
 @app.route('/get_personal_challenges_page', methods=['GET'])
