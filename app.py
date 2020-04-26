@@ -21,7 +21,7 @@ def home():
 @app.route('/get_posts', methods=['GET'])
 def get_posts():
     output = []
-    for x in posts.find({},{ "_id": 0, "post_id": 1, "handle": 1, "name": 1, "location":1, "image":0, "info":1, "profile_picture":0, "lat_lng":1, "timestamp":1, "challenge":1}):
+    for x in posts.find({},{ "_id": 0, "post_id": 1, "handle": 1, "name": 1, "location":1, "info":1, "lat_lng":1, "timestamp":1, "challenge":1}):
         print(x)
         output.append(x)
     return json.dumps(output)
