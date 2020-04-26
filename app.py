@@ -51,7 +51,7 @@ def send_post():
     lat_lng_arr[0] += (random.randint(1,50) * 0.0001)
     lat_lng_arr[1] += (random.randint(1,50) * 0.0001)
     lat_lng = ",".join(lat_lng_arr)
-    
+
     post = {
         'post_id': post_id,
         'handle': handle,
