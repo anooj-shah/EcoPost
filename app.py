@@ -15,7 +15,6 @@ db = client['ecopost']
 posts = db['posts']
 users = db['users']
 challenges = db['challenges']
-challenged_by = db['challenged_by']
 comments = db['comments']
 @app.route('/')
 def home():
@@ -51,7 +50,7 @@ def send_post():
     lat_lng_arr[0] += (random.randint(1,50) * 0.0001)
     lat_lng_arr[1] += (random.randint(1,50) * 0.0001)
     lat_lng = ",".join(lat_lng_arr)
-    
+
     post = {
         'post_id': post_id,
         'handle': handle,
@@ -69,8 +68,8 @@ def send_post():
 
     posts.insert_one(post)
     challenges_arr = challenge.split(',')
-    challenges.insert_one({handle: challenges_arr})
-
+    for i in challenges_arr:
+        challenges.insert_one({i: handle})
     return "success"
 
 @app.route('/get_personal_challenges_page', methods=['GET'])
@@ -89,6 +88,9 @@ def get_personal_challenges_page():
     dict['name'] = post['name']
     dict['challenged'] = post['challenge']
 
+@app.route('/get_post_comments', methods=['GET'])
+def get_post_comments():
+    response = request.form
 
 @app.route('/get_post_comments', methods=['GET'])
 def get_post_comments():
