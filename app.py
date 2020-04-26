@@ -5,6 +5,7 @@ import os
 from bson.json_util import dumps
 import json
 import uuid
+import random
 
 app = Flask(__name__)
 
@@ -13,6 +14,8 @@ client = MongoClient(uri)
 db = client['ecopost']
 posts = db['posts']
 users = db['users']
+challenges = db['challenges']
+challenged_by = db['challenged_by']
 comments = db['comments']
 @app.route('/')
 def home():
@@ -22,7 +25,7 @@ def home():
 def get_posts():
     output = []
     dict = {}
-    for x in posts.find({},{ "_id": 0, "post_id": 1, "handle": 1, "image":1, "profile_picture":1, "name": 1, "location":1, "info":1, "lat_lng":1, "timestamp":1, "challenge":1}):
+    for x in posts.find({},{ "_id": 0, "post_id": 1, "handle": 1, "likes":1, "hashtag":1, "image":1, "profile_picture":1, "name": 1, "location":1, "info":1, "lat_lng":1, "timestamp":1, "challenge":1}):
         print(x)
         output.append(x)
     dict['data'] = output
@@ -34,28 +37,16 @@ def send_post():
     id = uuid.uuid4()
     post_id = str(id)
 
-    # handle = response['handle']
-    # name = response['name']
-    # location = response['location']
-    # image = response['image']
-    # info = response['info']
-    # profile_picture = response['profile_picture']
-    # lat_lng = response['lat_lng'] # array
-    # timestamp = response['timestamp']
-    # challenge = response['challenge'] # given as string
-    # challenge = challenge.split(',')
-
     handle = response.get('handle')
     name = response.get('name')
     location = response.get('location')
     image = response.get('image')
+    hashtag = response.get('hashtag')
     info = response.get('info')
     profile_picture = response.get('profile_picture')
-    lat_lng = response.get('lat_lng') # array
-    # lat_lng = lat_lng.split(',')
+    lat_lng = response.get('lat_lng')
     timestamp = response.get('timestamp')
-    challenge = response.get('challenge') # given as string
-    # challenge = challenge.split(',')
+    challenge = response.get('challenge')
 
     post = {
         'post_id': post_id,
@@ -63,29 +54,51 @@ def send_post():
         'name': name,
         'location': location,
         'image': image,
+        'likes': random.randInt(50,2000),
+        'hashtag': hashtag,
         'info': info,
         'profile_picture': profile_picture,
         'lat_lng': lat_lng,
         'timestamp': timestamp,
         'challenge': challenge
     }
+
     posts.insert_one(post)
+    challenges_arr = challenges.split(',')
+    challenges.insert_one({'handle': challenges_arr})
+
     return "success"
+
+@app.route('/get_personal_challenges_page', methods=['GET']):
+def get_personal_challenges_page():
+    response = request.form
+    handle = response['handle']
+    dict = {}
+    challenged_by = []
+    # dict['challenged_by'] = challenged_by # needs to include status
+    #
+    # # This will be received from the handle
+    # dict['handle'] = handle
+    # dict['profile_picture'] = profile_picture
+    # dict['name'] = name;
+    # dict['challenged'] = challenge
+
+
+
 @app.route('/get_post_comments', methods=['GET'])
 def get_post_comments():
-    response = dict(request.form)
+    response = request.form
 
 @app.route('/send_post_comment', methods=['POST'])
 def send_post_comments():
-    response = dict(request.form)
-    post_id = response['post_id']
-    handle = response['handle']
-    profile_picture = response['profile_picture']
-    comment = response['comment']
-    timestamp = response['timestamp']
+    response = request.form
+    post_id = response.get('post_id')
+    handle = response.get('handle')
+    profile_picture = response.get('profile_picture')
+    comment = response.get('comment')
+    timestamp = response.get('timestamp')
 
     comment = {
-
     }
 
 @app.route('/upload_image', methods=['POST'])
