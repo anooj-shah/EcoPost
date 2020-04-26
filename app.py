@@ -67,8 +67,7 @@ def send_post():
         'challenge': challenge
     }
     posts.insert_one(post)
-    status_code = flask.Response(status=201)
-    return 200
+    return "success"
 @app.route('/get_post_comments', methods=['GET'])
 def get_post_comments():
     response = dict(request.form)
