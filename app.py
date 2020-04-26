@@ -21,7 +21,7 @@ def home():
 @app.route('/get_posts', methods=['GET'])
 def get_posts():
     output = []
-    for x in posts.find({},{ "_id": 0, "image": 1}):
+    for x in posts.find({},{ "_id": 0, "post_id": 1, "handle": 1, "name": 1, "location":1, "image":1, "info":1, "profile_picture":1, "lat_lng":1, "timestamp":1, "challenge":1):
         print(x)
         output.append(x)
     return json.dumps(output)
@@ -50,6 +50,7 @@ def send_post():
     info = response.get('info')
     profile_picture = response.get('profile_picture')
     lat_lng = response.get('lat_lng') # array
+    lat_lng = response.split(',')
     timestamp = response.get('timestamp')
     challenge = response.get('challenge') # given as string
     challenge = challenge.split(',')
