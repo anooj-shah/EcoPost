@@ -28,7 +28,7 @@ def get_posts():
 
 @app.route('/send_post', methods=['POST'])
 def send_post():
-    response = dict(request.form)
+    response = request.get_json()
     id = uuid.uuid4()
     post_id = str(id)
 
@@ -40,7 +40,8 @@ def send_post():
     profile_picture = response['profile_picture']
     lat_lng = response['lat_lng'] # array
     timestamp = response['timestamp']
-    challenge = response['challenge'] # array
+    challenge = response['challenge'] # given as string
+    challenge = challenge.split(',')
 
     post = {
         'post_id': post_id,
